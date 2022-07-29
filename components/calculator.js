@@ -60,15 +60,18 @@ const Calculator = ({ selectedDay }) => {
             {checkHeat &&
                 <>
                     <div>
-                        <div className="text-slate-400">First Heat Check:  <span className="text-slate-700 ml-5">{format(checkHeat.firstHeatCheck, 'dd-MMM-yyyy')}</span></div>
-                        <div className="text-slate-400">Second Heat Check: <span className="text-slate-700 ml-5">{format(checkHeat.secondHeatCheck, 'dd-MMM-yyyy')}</span></div>
-                        <div className="text-slate-400">Third Heat Check:  <span className="text-slate-700 ml-5">{format(checkHeat.thirdHeatCheck, 'dd-MMM-yyyy')}</span></div>
+                        <div className="text-slate-400">First Heat Check:  <span className="text-slate-700 ml-5">{format(checkHeat.firstHeatCheck, 'dd-MMM-yyyy')} <span className="text-slate-400 mx-3">to</span> {format(checkHeat.secondHeatCheck, 'dd-MMM-yyyy')}</span></div>
+                        <div className="text-slate-400">Second Heat Check:  <span className="text-slate-700 ml-5">{format(checkHeat.thirdHeatCheck, 'dd-MMM-yyyy')}</span></div>
                     </div>
                 
                 
                     <div className="mt-5">
-                        <div className="text-slate-400">First Pregnancy Confirmation:  <span className="text-slate-700 ml-5">{format(confirmPregnancy.firstPregnancyConfirmation, 'dd-MMM-yyyy')}</span></div>
-                        <div className="text-slate-400">Second Pregnancy Confirmation: <span className="text-slate-700 ml-5">{format(confirmPregnancy.secondPregnancyConfirmation, 'dd-MMM-yyyy')}</span></div>
+                        <div className="text-slate-400">
+                            Pregnancy Confirmation:  <span className="text-slate-700 ml-5">{format(confirmPregnancy.firstPregnancyConfirmation, 'dd-MMM-yyyy')}
+                            <span className="text-slate-400 mx-2">to</span>
+                            <span className="text-slate-700">{format(confirmPregnancy.secondPregnancyConfirmation, 'dd-MMM-yyyy')}</span></span>
+                        </div>
+                    
                     </div>
 
                     <div className="mt-5">
