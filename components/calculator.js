@@ -60,7 +60,7 @@ const Calculator = ({ selectedDay }) => {
             {checkHeat &&
                 <>
                     <div>
-                        <div className="text-slate-400">First Heat Check:  <span className="text-slate-700 ml-5">{format(checkHeat.firstHeatCheck, 'dd-MMM-yyyy')} <span className="text-slate-400 mx-3">to</span> {format(checkHeat.secondHeatCheck, 'dd-MMM-yyyy')}</span></div>
+                        <div className="text-slate-400">First Heat Check:  <span className="text-slate-700 ml-5">{format(checkHeat.firstHeatCheck, 'dd-MMM-yyyy')} <span className="text-slate-400 mx-2">to</span> {format(checkHeat.secondHeatCheck, 'dd-MMM-yyyy')}</span></div>
                         <div className="text-slate-400">Second Heat Check:  <span className="text-slate-700 ml-5">{format(checkHeat.thirdHeatCheck, 'dd-MMM-yyyy')}</span></div>
                     </div>
                 
