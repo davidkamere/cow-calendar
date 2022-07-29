@@ -60,8 +60,8 @@ const Calendar = () => {
   return (
     <div className="">
       <div className="max-w-md px-4 mx-auto sm:px-7 md:max-w-4xl md:px-6">
-        <div className="md:grid md:grid-cols-2 md:divide-x md:divide-gray-200">
-          <div className="md:pr-14">
+        <div className="md:grid md:grid-cols-2 md:divide-x md:divide-gray-200  ">
+          <div className="p-5 md:mr-6  bg-white rounded">
             <div className="flex items-center">
               <h2 className="flex-auto font-semibold text-gray-900">
                 {format(firstDayCurrentMonth, 'MMMM yyyy')}
@@ -137,8 +137,8 @@ const Calendar = () => {
               ))}
             </div>
           </div>
-          <section className="mt-12 md:mt-0 md:pl-14">
-            <h2 className="font-semibold text-gray-900">
+          <section className="mt-12 mb-12 md:mt-0 md:pl-14">
+            <h2 className="font-semibold text-gray-900 text-xl flex justify-center gap-2">
               Service Date : {' '}
               <time dateTime={format(selectedDay, 'yyyy-MM-dd')}>
                 {format(selectedDay, 'MMM dd, yyy')}

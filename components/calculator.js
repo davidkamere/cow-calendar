@@ -58,34 +58,47 @@ const Calculator = ({ selectedDay }) => {
     return (
         <>
             {checkHeat &&
-                <>
-                    <div>
-                        <div className="text-slate-400">First Heat Check:  <span className="text-slate-700 ml-5">{format(checkHeat.firstHeatCheck, 'dd-MMM-yyyy')} <span className="text-slate-400 mx-2">to</span> {format(checkHeat.secondHeatCheck, 'dd-MMM-yyyy')}</span></div>
-                        <div className="text-slate-400">Second Heat Check:  <span className="text-slate-700 ml-5">{format(checkHeat.thirdHeatCheck, 'dd-MMM-yyyy')}</span></div>
-                    </div>
-                
-                
-                    <div className="mt-5">
-                        <div className="text-slate-400">
-                            Pregnancy Confirmation:  <span className="text-slate-700 ml-5">{format(confirmPregnancy.firstPregnancyConfirmation, 'dd-MMM-yyyy')}
-                            <span className="text-slate-400 mx-2">to</span>
-                            <span className="text-slate-700">{format(confirmPregnancy.secondPregnancyConfirmation, 'dd-MMM-yyyy')}</span></span>
+                <div className="flex flex-col gap-4 text-base font-semibold">
+                    <div className="w-96 border border-slate-100 bg-white backdrop-blur-lg rounded-md p-4">
+                        <div className="flex flex-col">
+                            <div className="text-black">First Heat Check:</div>
+                            <div className="flex justify-between mb-4">
+                                <div className="text-lime-900">{format(checkHeat.firstHeatCheck, 'dd-MMM-yyyy')}</div>
+                                <div className="text-slate-400">-</div> 
+                                <div className="text-lime-900">{format(checkHeat.secondHeatCheck, 'dd-MMM-yyyy')}</div>
+                            </div>
+                            <div className="text-black">Second Heat Check:</div>
+                            <div className="text-lime-900">{format(checkHeat.thirdHeatCheck, 'dd-MMM-yyyy')}</div>
                         </div>
-                    
+                    </div>
+                
+                    <div className="w-96 border border-slate-100 bg-white backdrop-blur-lg rounded-md p-4">
+                        <div className="text-black flex flex-col">
+                            <div className="mb-1">Pregnancy Confirmation:</div>
+                            <div className="flex justify-between">
+                                <div className="text-lime-900">{format(confirmPregnancy.firstPregnancyConfirmation, 'dd-MMM-yyyy')}</div>
+                                <div className="text-slate-400">-</div> 
+                                <div className="text-lime-900">{format(confirmPregnancy.secondPregnancyConfirmation, 'dd-MMM-yyyy')}</div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div className="mt-5">
-                        <div className="text-slate-400">Stop Milking On:  <span className="text-slate-700 ml-5">{format(stopMilkingDate, 'dd-MMM-yyyy')}</span></div>
+                    <div className="w-96 border border-slate-100 bg-white backdrop-blur-lg rounded-md p-4 flex justify-between">
+                        <div className="text-black">Stop Milking On:</div>
+                        <div className="text-lime-900 ml-5">{format(stopMilkingDate, 'dd-MMM-yyyy')}</div>
                     </div>
 
-                    <div className="mt-5">
-                        <div className="text-slate-400">Calving Date:  <span className="text-slate-700 ml-5">{format(calvingDate, 'dd-MMM-yyyy')}</span></div>
+                    <div className="w-96 border border-slate-100 bg-white backdrop-blur-lg rounded-md p-4 flex justify-between">
+                        <div className="text-black">Calving Date:</div>
+                        <div className="text-lime-900 ml-5">{format(calvingDate, 'dd-MMM-yyyy')}</div>
                     </div>
 
-                    <div className="mt-5">
-                        <div className="text-slate-400">End of Rest Period:  <span className="text-slate-700 ml-5">{format(endOfRestPeriod, 'dd-MMM-yyyy')}</span></div>
+                    <div className="w-96 border border-slate-100 bg-white backdrop-blur-lg rounded-md p-4 flex justify-between">
+                        <div className="text-black">End of Rest Period:</div>
+                        <div className="text-lime-900 ml-5">{format(endOfRestPeriod, 'dd-MMM-yyyy')}</div>
                     </div>
-                </>
+
+                </div>
             }
         </>
     )
