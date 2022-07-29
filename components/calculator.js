@@ -63,12 +63,12 @@ const Calculator = ({ selectedDay }) => {
                         <div className="flex flex-col">
                             <div className="text-black">First Heat Check:</div>
                             <div className="flex justify-between mb-4">
-                                <div className="text-lime-900">{format(checkHeat.firstHeatCheck, 'dd-MMM-yyyy')}</div>
+                                <div className="text-red-900">{format(checkHeat.firstHeatCheck, 'dd-MMM-yyyy')}</div>
                                 <div className="text-slate-400">-</div> 
-                                <div className="text-lime-900">{format(checkHeat.secondHeatCheck, 'dd-MMM-yyyy')}</div>
+                                <div className="text-red-900">{format(checkHeat.secondHeatCheck, 'dd-MMM-yyyy')}</div>
                             </div>
                             <div className="text-black">Second Heat Check:</div>
-                            <div className="text-lime-900">{format(checkHeat.thirdHeatCheck, 'dd-MMM-yyyy')}</div>
+                            <div className="text-red-900">{format(checkHeat.thirdHeatCheck, 'dd-MMM-yyyy')}</div>
                         </div>
                     </div>
                 
@@ -76,26 +76,26 @@ const Calculator = ({ selectedDay }) => {
                         <div className="text-black flex flex-col">
                             <div className="mb-1">Pregnancy Confirmation:</div>
                             <div className="flex justify-between">
-                                <div className="text-lime-900">{format(confirmPregnancy.firstPregnancyConfirmation, 'dd-MMM-yyyy')}</div>
+                                <div className="text-red-900">{format(confirmPregnancy.firstPregnancyConfirmation, 'dd-MMM-yyyy')}</div>
                                 <div className="text-slate-400">-</div> 
-                                <div className="text-lime-900">{format(confirmPregnancy.secondPregnancyConfirmation, 'dd-MMM-yyyy')}</div>
+                                <div className="text-red-900">{format(confirmPregnancy.secondPregnancyConfirmation, 'dd-MMM-yyyy')}</div>
                             </div>
                         </div>
                     </div>
 
                     <div className="w-96 border border-slate-100 bg-white backdrop-blur-lg rounded-md p-4 flex justify-between">
                         <div className="text-black">Stop Milking On:</div>
-                        <div className="text-lime-900 ml-5">{format(stopMilkingDate, 'dd-MMM-yyyy')}</div>
+                        <div className="text-red-900 ml-5">{format(stopMilkingDate, 'dd-MMM-yyyy')}</div>
                     </div>
 
                     <div className="w-96 border border-slate-100 bg-white backdrop-blur-lg rounded-md p-4 flex justify-between">
                         <div className="text-black">Calving Date:</div>
-                        <div className="text-lime-900 ml-5">{format(calvingDate, 'dd-MMM-yyyy')}</div>
+                        <div className="text-red-900 ml-5">{format(calvingDate, 'dd-MMM-yyyy')}</div>
                     </div>
 
                     <div className="w-96 border border-slate-100 bg-white backdrop-blur-lg rounded-md p-4 flex justify-between">
                         <div className="text-black">End of Rest Period:</div>
-                        <div className="text-lime-900 ml-5">{format(endOfRestPeriod, 'dd-MMM-yyyy')}</div>
+                        <div className="text-red-900 ml-5">{format(endOfRestPeriod, 'dd-MMM-yyyy')}</div>
                     </div>
 
                 </div>

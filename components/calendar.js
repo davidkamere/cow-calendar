@@ -63,7 +63,7 @@ const Calendar = () => {
         <div className="md:grid md:grid-cols-2 md:divide-x md:divide-gray-200  ">
           <div className="p-5 md:mr-6  bg-white rounded">
             <div className="flex items-center">
-              <h2 className="flex-auto font-semibold text-gray-900">
+              <h2 className="flex-auto font-semibold text-gray-900 text-xl ">
                 {format(firstDayCurrentMonth, 'MMMM yyyy')}
               </h2>
               <button
