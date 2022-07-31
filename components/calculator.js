@@ -89,8 +89,8 @@ const Calculator = ({ selectedDay }) => {
                     </div>
 
                     <div>
-                        <div className="flex w-96 h-10 bg-gradient-to-r from-white via-zinc-200 to-white rounded-lg justify-center items-center ">
-                            <span className="text-slate-600">Transition Period</span>
+                        <div className="flex w-96 h-10 bg-gradient-to-r from-white via-zinc-100 to-white rounded-lg justify-center items-center ">
+                            <span className="text-slate-500">Transition Period</span>
                         </div>
                     </div>
 
