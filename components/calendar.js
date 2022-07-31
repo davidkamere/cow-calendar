@@ -59,7 +59,7 @@ const Calendar = () => {
 
   return (
     <div className="">
-      <div className="max-w-md px-4 mx-auto sm:px-7 md:max-w-4xl md:px-6">
+      <div className="md:max-w-4xl md:px-6">
         <div className="md:grid md:grid-cols-2 md:divide-x md:divide-gray-200  ">
           <div className="p-5 md:mr-6  bg-white rounded">
             <div className="flex items-center">
@@ -69,7 +69,7 @@ const Calendar = () => {
               <button
                 type="button"
                 onClick={previousMonth}
-                className="-my-1.5 flex flex-none items-center justify-center p-1.5 text-gray-400 hover:text-gray-500"
+                className="flex flex-none items-center justify-center p-1.5 text-gray-400 hover:text-gray-500"
               >
                 <span className="sr-only">Previous month</span>
                 <ChevronLeftIcon className="w-5 h-5" aria-hidden="true" />
@@ -77,7 +77,7 @@ const Calendar = () => {
               <button
                 onClick={nextMonth}
                 type="button"
-                className="-my-1.5 -mr-1.5 ml-2 flex flex-none items-center justify-center p-1.5 text-gray-400 hover:text-gray-500"
+                className="ml-2 flex flex-none items-center justify-center p-1.5 text-gray-400 hover:text-gray-500"
               >
                 <span className="sr-only">Next month</span>
                 <ChevronRightIcon className="w-5 h-5" aria-hidden="true" />
