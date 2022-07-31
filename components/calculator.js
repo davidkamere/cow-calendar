@@ -88,8 +88,14 @@ const Calculator = ({ selectedDay }) => {
                         <div className="text-red-900 ml-5">{format(stopMilkingDate, 'dd-MMM-yyyy')}</div>
                     </div>
 
+                    <div>
+                        <div className="flex w-96 h-10 bg-gradient-to-r from-white to-zinc-200 rounded-lg justify-center items-center ">
+                            <span className="text-slate-600">Transition Period</span>
+                        </div>
+                    </div>
+
                     <div className="w-96 border border-slate-100 bg-white backdrop-blur-lg rounded-md p-4 flex justify-between">
-                        <div className="text-black">Calving Date:</div>
+                        <div className="text-black">Expected D.O.B:</div>
                         <div className="text-red-900 ml-5">{format(calvingDate, 'dd-MMM-yyyy')}</div>
                     </div>
 
